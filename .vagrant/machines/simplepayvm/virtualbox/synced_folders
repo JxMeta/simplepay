@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www":{"guestpath":"/var/www","hostpath":"/home/jxu/JxVagrant/simplepay/wwwroot","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/jxu/JxVagrant/simplepay","disabled":false}}}
