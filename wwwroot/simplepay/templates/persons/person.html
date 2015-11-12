@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+ 
+{% block title %}
+{{ person.name }}
+{% endblock title %}
+ 
+ 
+{% block content %}
+<h1>{{ person.name }}</h1>
+<div id="person_detail">
+    Gender:&nbsp;&nbsp;{{ person.sex }}<br/>
+    Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ person.age }}<br/>
+    Active:&nbsp;&nbsp;&nbsp;&nbsp;{{ person.active }}<br/>
+    Tag:    
+<ul>
+    {% for tag in person.tags.all %}
+        <li>
+            <a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a>
+        </li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock content %}
